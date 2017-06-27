@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="Hoja de Vida" content="Contiene la hoja de vida Digital">
-    <title>Hoja de Vida Digital</title>
+    <meta name="educacion" content="Muestra datos sobre la educacion y formacion en la hoja de vida.">
+    <title>Educación Hoja de Vida</title>
   </head>
   <body>
     <svg width="200" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -30,25 +30,70 @@
       <h3>Fecha de Nacimiento : 11 de Junio de 1984</h3>
       <!-- Enlaces de Menu -->
       <ul>
-       <li><a href="">Inicio</a><br></li>
+       <li><a href="../index.html">Inicio</a><br></li>
        <li><a href="html/educacion.html">Educación</a><br></li>
-       <li><a href="html/experiencia.html">Experiencia</a></li>
+       <li><a href="../html/experiencia.html">Experiencia</a></li>
       </ul>
+      <!-- Educación -->
+      <h2>Educación</h2>
+      <!-- Tabla de 4 x 3 Filas -->
+      <table border="2">
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culmino?</th>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>Universidad Pública de El Alto (U.P.E.A.)</td>
+            <td>Ciudad de El Alto</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>Next - University</td>
+            <td>Colombia - Vía Online</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>I.N.F.O.C.A.L.</td>
+            <td>Ciudad de La Paz</td>
+            <td>SI</td>
+          </tr>
+      </table>
+      <!-- Formulario para adicionar Estudios -->
+      <h3>Agregar Estudios</h3>
 
-      <!-- Información Personal -->
-      <h2>Información Personal</h2>
-      <!-- foto de perfil  -->
-      <img src="img/fotoPerfil.jpg" width="200" height="180">
-      <!-- Perfil -->
-      <h2>información de Perfil</h2>
-      <ul>
-        <strong><li>Perfil : </li></strong>Profesional Desarrollador en Tecnologias Web.
-        <strong><li>Idiomas :</li></strong>Ingles, Español.
-        <strong><li>Idiomas Nativos : </li></strong>Aymara, Quechua.
-      </ul>
+      <label for="anio"><strong>Año : </strong></label>
+      <select name="anio">
+         <option value="1">2017</option>
+         <option value="2">2018</option>
+         <option value="3">2019</option>
+         <option value="4">2020</option>
+         <option value="5">2021</option>
+         <option value="6">2022</option>
+      </select>
+      <br>
+      <br>
+      <label for="institucion"><strong>Institución : </strong></label>
+      <input type="text" name="" value="" id="institucion" placeholder="Next-U">
+      <br>
+      <br>
+      <label for="lugar"><strong>Lugar : </strong></label>
+      <textarea name="comentarios" rows="1" cols="30"></textarea>
+      <br>
+      <br>
+      <label for="culmino"><strong>¿Culmino? : </strong></label>
+      <input type="radio" name="" value="masculino">SI
+      <input type="radio" name="" value="femenino">NO
+      <br>
+      <br>
+      <input type="submit" value="Enviar" />
       <!-- Pie de Pagina -->
       <footer>
-        <h4><strong>Derechos Reservados - 2017 └Sogni.com</strong></h4>
+        <h4><strong>Derechos Reservados - 2017  └Sogni.com</strong></h4>
         <ul>
           <li><strong>Correo Electronico : </strong><a href="">guerynextu@gmail.com</a></li>
           <li><strong>Teléfono : </strong>75242065</li>
